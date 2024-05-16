@@ -23,7 +23,7 @@ app.use(express.json())//converts the incoming data to JSON format
 //routes
 
 //get all students
-
+//This is not a best practice the best one is using async await
 app.get('/students', (req, res) => {
 
     try {
