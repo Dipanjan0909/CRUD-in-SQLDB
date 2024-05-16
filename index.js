@@ -24,7 +24,7 @@ app.use(express.json())//converts the incoming data to JSON format
 
 //get all students
 
-app.get('/students', async(req, res) => {
+app.get('/students', (req, res) => {
 
     try {
         pool.query(`SELECT * FROM "Students" ORDER BY id ASC`, (err, result) => {
